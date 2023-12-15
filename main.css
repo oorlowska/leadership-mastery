@@ -4,6 +4,13 @@
   box-sizing: border-box;
 }
 
+/* --NAVBAR-- */
+
+nav img {
+    width: 50px;
+    height: 50px;
+}
+
 /* --SEKCJA PRODUKT-- */
 
 /* ZALETY PRODUKTU */
@@ -134,7 +141,6 @@ a {
 
 .contact {
   padding-left: 30px;
-  width: 60%;
   font-size: 14px;
 }
 
