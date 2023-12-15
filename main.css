@@ -6,10 +6,19 @@
 
 /* --NAVBAR-- */
 
-nav img {
-    width: 50px;
-    height: 50px;
+nav {
+    background-color: #6b639b;
 }
+
+nav img {
+  width: 50px;
+  height: 50px;
+}
+
+nav .nav-link {
+    color: white;
+}
+
 
 /* --SEKCJA PRODUKT-- */
 
@@ -46,12 +55,12 @@ nav img {
 
 /* CENNIK */
 
-.section-title {
+.pricing-title {
   margin-bottom: 60px;
   color: #0d0221;
 }
 
-.section-title h2 {
+.pricing-title h2 {
   font-size: 45px;
   font-weight: 600;
   margin-top: 3rem;
@@ -59,7 +68,7 @@ nav img {
   text-transform: capitalize;
 }
 
-.section-title p {
+.pricing-title p {
   margin-top: 3rem;
 }
 
@@ -72,7 +81,7 @@ nav img {
   margin: 10px 15px;
 }
 
-.single-pricing {
+.pricing__card-single {
   background: #554c86;
   padding: 60px 40px;
   border-radius: 30px;
@@ -81,7 +90,7 @@ nav img {
   z-index: 1;
 }
 
-.single-pricing:before {
+.pricing__card-single:before {
   content: "";
   background-color: #fff;
   width: 100%;
@@ -105,13 +114,13 @@ nav img {
   margin-top: 20px;
 }
 
-.single-pricing ul {
+.pricing__card-single ul {
   list-style: none;
   margin-top: 30px;
   padding-left: 0;
 }
 
-.single-pricing ul li {
+.pricing__card-single ul li {
   line-height: 36px;
 }
 
@@ -213,14 +222,9 @@ a {
   box-shadow: 0 10px 20px -10px rgba(45, 0, 128, 0.404);
 }
 
-
-
-
-
-
 /* FOOTER */
 
 footer img {
-    width: 50px;
-    height: 50px;
+  width: 50px;
+  height: 50px;
 }

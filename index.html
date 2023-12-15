@@ -17,19 +17,29 @@
     <link rel="stylesheet" href="./main.css" />
   </head>
   <body>
-    <nav class="navbar">
-      <a href="#"
-        ><img src="./assets/logo.png" alt="logo firmy" class="navbar__logo"
-      /></a>
-      <ul class="navbar__menu">
-        <li><a href="#">Strona Główna</a></li>
-        <li><a href="#">O Nas</a></li>
-        <li><a href="#">Oferta</a></li>
-        <li><a href="#">Kontakt</a></li>
-      </ul>
-    </nav>
 
-    <header class="banner">
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top top-0 py-3">
+      <div class="container sticky-top">
+        <a href="#" class="navbar__logo">
+          <img src="./assets/logo.png" alt="logo firmy" />
+        </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fa-solid fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav ms-auto">
+                  <a class="nav-link" aria-current="page" href="#">Strona Główna</a>
+                  <a class="nav-link" href="#">O nas</a>
+                  <a class="nav-link" href="#product">Oferta</a>
+                  <a class="nav-link" href="#pricing">Cennik</a>
+                  <a class="nav-link" href="#contact">Kontakt</a>
+              </div>
+          </div>
+      </div>
+  </nav>  
+    
+    <header class="banner container">
       <img
         src="./assets/teamwork2_640.jpg"
         alt="spotkanie biznesowe zespołu"
@@ -38,8 +48,9 @@
     </header>
 
     <section class="about-us"></section>
-    <section class="product">
-      <div class="product__info">
+
+    <section class="product" id="product">
+      <div class="product__info container">
         <h2>Leadership Mastery - Zarządzanie z Pasją</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
@@ -86,9 +97,9 @@
       <div class="product__trainers"></div>
     </section>
 
-    <div class="product__price-table">
+    <section class="pricing" id="pricing">
       <div class="container">
-        <div class="section-title text-center">
+        <div class="pricing-title text-center">
           <h2>Cennik</h2>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos
@@ -98,10 +109,9 @@
           </p>
         </div>
         <div class="row text-center">
-          <!-- Basic -->
           <div class="col-lg-4 col-sm-6 col-xs-12">
-            <div class="pricing_card">
-              <div class="single-pricing">
+            <div class="pricing__card">
+              <div class="pricing__card-single">
                 <div class="price-head">
                   <h2>Basic</h2>
                   <h1>299 zł</h1>
@@ -115,10 +125,9 @@
               </div>
             </div>
           </div>
-          <!-- Ultimate -->
           <div class="col-lg-4 col-sm-6 col-xs-12">
             <div class="pricing_card">
-              <div class="single-pricing">
+              <div class="pricing__card-single">
                 <div class="price-head">
                   <h2>Ultimate</h2>
                   <h1 class="price">699 zł</h1>
@@ -132,10 +141,9 @@
               </div>
             </div>
           </div>
-          <!-- Ultimate PRO -->
           <div class="col-lg-4 col-sm-6 col-xs-12">
             <div class="pricing_card">
-              <div class="single-pricing">
+              <div class="pricing__card-single">
                 <div class="price-head">
                   <h2>Ultimate PRO</h2>
                   <h1 class="price">999 zł</h1>
@@ -150,13 +158,11 @@
             </div>
           </div>
         </div>
-        <!--- END ROW -->
       </div>
-      <!--- END CONTAINER -->
-    </div>
+    </section>
 
     <div class="container">
-      <div class="contact row">
+      <div class="contact row" id="contact">
         <div class="col-md-6 contact__form">
           <form>
             <div class="mb-3">
