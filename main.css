@@ -8,6 +8,7 @@
 
 nav {
     background-color: #6b639b;
+    height: 70px;
 }
 
 nav img {
@@ -19,6 +20,15 @@ nav .nav-link {
     color: white;
 }
 
+.navbar-collapse {
+  background-color: #6b639b;
+}
+
+/* --HEADER-- */
+
+header {
+  width: 100%;
+}
 
 /* --SEKCJA PRODUKT-- */
 
@@ -70,6 +80,7 @@ nav .nav-link {
 
 .pricing-title p {
   margin-top: 3rem;
+  width: 50%;
 }
 
 .pricing-content {
@@ -148,6 +159,10 @@ a {
 
 /* FORMULARZ KONTAKTOWY */
 
+.contact__container {
+  margin-top: 50px;
+}
+
 .contact {
   padding-left: 30px;
   font-size: 14px;
@@ -186,7 +201,7 @@ a {
 }
 
 .contact .checkbox {
-  font-size: 12px;
+  font-size: 10.5px;
 }
 
 /* OSOBA KONTAKTOWA */
@@ -206,6 +221,10 @@ a {
 
 .contact__contact-person .social-media {
   padding-top: 20px;
+}
+
+.contact__contact-person i {
+  padding-right: 5px;
 }
 
 .social-media i {
