@@ -18,7 +18,7 @@
   </head>
   <body>
     <nav id="navbar" class="navbar navbar-expand-lg fixed-top top-0">
-      <div class="container sticky-top">
+      <div class="container">
         <a href="#" class="navbar__logo">
           <img src="./assets/logo.png" alt="logo firmy" />
         </a>
@@ -47,7 +47,13 @@
 
     <header class="banner">
       <div class="text-center banner__hero-img">
-        <div class="banner_shadow"></div>
+        <div class="banner__shadow"></div>
+        <div class="banner__text container">
+          <h1><span>Zarządzanie</span> to nasza pasja</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero fugit pariatur est, hic vitae unde eveniet facere fuga neque cumque quaerat illum eum corrupti animi omnis dolor molestias ducimus iste asperiores voluptate voluptatum in error.</p>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem minima quibusdam molestias maxime quos consequatur nesciunt repellendus rerum veniam quia!</p>
+          <button class="btn banner__btn"><a href="#product">poznaj ofertę</a></button>
+        </div>
       </div>
     </header>
 
@@ -224,6 +230,7 @@
                 class="form-control"
                 rows="3"
                 placeholder="Wpisz treść wiadomości"
+                required
               ></textarea>
             </div>
             <button type="submit" class="btn btn-primary">Wyślij</button>
@@ -251,10 +258,13 @@
 
     <footer>
       <div class="container">
-        <a href="#"><img src="./assets/logo.png" alt="logo firmy" /></a>
         <div class="row">
-          <div class="col-lg-12">
-            <p>Copyright © 2036 Olga Orłowska</a> 
+          <div class="col">
+            <a href="#" class="col-lg-2"><img src="./assets/logo.png" alt="logo firmy" /></a>
+            
+              <div class="col-lg-9">
+                <p>Copyright © 2036 Olga Orłowska</a> 
+              </div>
           </div>
         </div>
       </div>

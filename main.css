@@ -2,13 +2,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  max-width: calc(100vw - 5px);
 }
 
 /* --NAVBAR-- */
 
 nav {
-    background-color: #6b639b;
-    height: 70px;
+  background-color: #6b639b;
+  height: 70px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-weight: 500;
 }
 
 nav img {
@@ -17,7 +21,13 @@ nav img {
 }
 
 nav .nav-link {
-    color: white;
+  color: white;
+  margin: 0 10px;
+  transition: 0.7s;
+}
+
+nav .nav-link:hover {
+  border-bottom: 2px solid #cdb58a;
 }
 
 .navbar-collapse {
@@ -30,12 +40,12 @@ header {
   width: 100%;
 }
 
-.banner{
-  width: 100%;
+.banner {
   position: relative;
+  width: 100%;
 }
-.banner__hero-img{
-  /* width: 100%; */
+
+.banner__hero-img {
   background-image: url("./assets/teamwork2_1280.jpg");
   position: relative;
   height: 100vh;
@@ -44,13 +54,58 @@ header {
   background-attachment: fixed;
   z-index: 0;
 }
-.banner_shadow{
+
+.banner__shadow {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: -10;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -1;
 }
+
+.banner__text {
+  padding: 10px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  width: 40%;
+}
+
+.banner__text h1 {
+  margin-bottom: 30px;
+}
+
+.banner__text span {
+  color: #cdb58a;
+}
+
+.banner__btn {
+  background: #554c86;
+  padding: 10px 30px;
+  display: inline-block;
+  margin-top: 30px;
+  border-radius: 25px;
+  border: none;
+  transition: 0.5s;
+  text-transform: uppercase;
+}
+
+.banner__btn:hover {
+  background: #554c86;
+  scale: 1.05;
+  box-shadow: 0 10px 40px -10px rgba(45, 0, 128, 0.404);
+}
+
+.banner__btn a {
+  color: white;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
 /* --SEKCJA PRODUKT-- */
 
 /* ZALETY PRODUKTU */
@@ -100,7 +155,7 @@ header {
 }
 
 .pricing-title p {
-  margin-top: 3rem;
+  margin: 3rem auto 0;
   width: 50%;
 }
 
