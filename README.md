@@ -1,0 +1,2 @@
+- To install project please run 'npm install' in terminal.
+- To open website please open '.html' file in your browser.
