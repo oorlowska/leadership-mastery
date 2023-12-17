@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  max-width: calc(100vw - 5px);
 }
 
 /* --NAVBAR-- */
@@ -10,6 +9,7 @@
 nav {
   background-color: #6b639b;
   height: 70px;
+  opacity: 0.9;
   letter-spacing: 0.5px;
   text-transform: uppercase;
   font-weight: 500;
@@ -32,12 +32,22 @@ nav .nav-link:hover {
 
 .navbar-collapse {
   background-color: #6b639b;
+  opacity: 0.9;
 }
 
 /* --HEADER-- */
 
 header {
   width: 100%;
+}
+
+header .arrow {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 20px;
+  font-size: 35px;
+  color: white;
 }
 
 .banner {
@@ -478,7 +488,7 @@ footer img {
 @media (max-width: 800px) {
   .banner__text {
     font-size: 17px;
-  } 
+  }
 }
 
 @media (max-width: 610px) {
