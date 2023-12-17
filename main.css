@@ -168,7 +168,16 @@ header {
   margin: 50px auto;
 }
 
+.product__info h4 {
+  margin: 50px 0 30px;
+}
+
+.product__info p {
+  margin: 0 auto 50px;
+}
+
 .product__info-about img {
+  margin-top: 3rem;
   height: 400px;
   width: 400px;
 }
@@ -181,9 +190,38 @@ header {
   text-align: right;
 }
 
-.product__info p {
-  margin: 3rem auto;
-  width: 75%;
+.product__boxes i {
+  font-size: 45px;
+  text-align: center;
+  color: #554c86;
+  transition: 0.5s;
+  padding-top: 10px;
+}
+
+.product__boxes i:hover {
+  scale: 1.15;
+  color: #6b639b;
+}
+
+.product__boxes-box {
+  margin-bottom: 40px;
+  text-align: center;
+  padding: 20px 25px 40px 25px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+}
+
+.product__boxes-text {
+  margin-top: 30px;
+}
+
+.product__boxes-text h5 {
+  margin-bottom: 20px;
+}
+
+.product__boxes-text span {
+  color: #cdb58a;
 }
 
 /* ZALETY PRODUKTU */
@@ -207,12 +245,6 @@ header {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.45);
   z-index: -1;
-}
-
-.product__details h2 {
-  font-size: 45px;
-  font-weight: 600;
-  margin-top: 3rem;
 }
 
 .product__details-single {
