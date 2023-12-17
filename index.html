@@ -118,25 +118,18 @@
 
     <section class="product" id="product">
       <div class="product__info container text-center">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-lg-8 col-sm-12 m-auto">
-              <div class="text-center">
-                <h2>Leadership Mastery</h2>
-                <div class="underline"></div>
-                <h4>Nowoczesne zarządzanie zespołami<br /></h4>
-                <p class="product__info-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Maxime, architecto rerum doloremque recusandae tempore
-                  aspernatur temporibus inventore illo officiis itaque excepturi
-                  beatae nihil quos similique facilis, eos corporis. In, non
-                  repellat? Eius ullam sequi optio quo distinctio accusantium?
-                  Aliquam, quae. Laboriosam aperiam fuga maiores voluptatibus
-                  alias hic, labore saepe? Veniam?
-                </p>
-              </div>
-            </div>
-          </div>
+        <div class="col-lg-8 col-sm-12 m-auto">
+          <h2>Leadership Mastery</h2>
+          <div class="underline"></div>
+          <h4>Nowoczesne zarządzanie zespołami<br /></h4>
+          <p class="product__info-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
+            architecto rerum doloremque recusandae tempore aspernatur temporibus
+            inventore illo officiis itaque excepturi beatae nihil quos similique
+            facilis, eos corporis. In, non repellat? Eius ullam sequi optio quo
+            distinctio accusantium? Aliquam, quae. Laboriosam aperiam fuga
+            maiores voluptatibus alias hic, labore saepe? Veniam?
+          </p>
         </div>
 
         <div class="product__boxes container">
@@ -245,9 +238,9 @@
           <div class="underline"></div>
           <div class="row d-flex justify-content-center">
             <div class="product__details-single col-md-4">
-              <p><i class="fa-solid fa-chalkboard-user"></i></p>
+              <p class="number" id="counter-1">15</p>
               <p class="product__details-title mb-3">
-                Doświadczeni specjaliści
+                Doświadczonych specjalistów
               </p>
               <p class="product__details-description">
                 Wykwalifikowana kadra ekspertów z zakresu zarządzania, których
@@ -255,19 +248,19 @@
               </p>
             </div>
             <div class="product__details-single col-sm-4 col-md-4">
-              <p><i class="fa-solid fa-handshake-angle"></i></p>
-              <p class="product__details-title mb-3">Wsparcie mentora</p>
+              <p class="number" id="counter-2">200+</p>
+              <p class="product__details-title mb-3">Ukończonych kursów</p>
               <p class="product__details-description">
-                Możliwość zasięgnięcia indywidualnych konsultacji z mentorem i
-                specjalistami – także po ukończeniu kursu
+                Wyszkoliliśmy już ponad 200 menedżerów, którzy pod naszym okiem
+                doskonalili swoje umiejętności
               </p>
             </div>
             <div class="product__details-single col-sm-4 col-md-4">
-              <p><i class="fa-solid fa-book-open-reader"></i></p>
-              <p class="product__details-title mb-3">Baza wiedzy</p>
+              <p class="number" id="counter-3">45</p>
+              <p class="product__details-title mb-3">Godzin szkoleń online</p>
               <p class="product__details-description">
-                Dostęp do ciągle poszerzanej bazy wiedzy – webinarów, materiałów
-                szkoleniowych oraz biblioteki online
+                Nasi kursanci otrzymują dostęp do bazy wiedzy, dzięki której
+                mogą zdobywać wiedzę także w formule online
               </p>
             </div>
           </div>
@@ -275,7 +268,7 @@
       </div>
     </section>
 
-    <section class="pricing" id="pricing">
+    <section class="pricing bg-light" id="pricing">
       <div class="container">
         <div class="pricing-title text-center">
           <h2>Cennik</h2>
@@ -291,7 +284,7 @@
           <div class="col-lg-4 col-sm-6 col-xs-12">
             <div class="pricing__card">
               <div class="pricing__card-single">
-                <div class="price-head">
+                <div class="pricing__card-title">
                   <h2>Basic</h2>
                   <h1>299 zł</h1>
                 </div>
@@ -300,14 +293,14 @@
                   <li><b>30 minut</b> konsultacji</li>
                   <li><b>5%</b> rabatu na szkolenia</li>
                 </ul>
-                <a href="#" class="price_btn">Zamów</a>
+                <a href="#" class="pricing__btn">Zamów</a>
               </div>
             </div>
           </div>
           <div class="col-lg-4 col-sm-6 col-xs-12">
             <div class="pricing_card">
               <div class="pricing__card-single">
-                <div class="price-head">
+                <div class="pricing__card-title">
                   <h2>Ultimate</h2>
                   <h1 class="price">699 zł</h1>
                 </div>
@@ -316,14 +309,14 @@
                   <li><b>60 minut</b> konsultacji</li>
                   <li><b>5%</b> rabatu na szkolenia</li>
                 </ul>
-                <a href="#" class="price_btn">Zamów</a>
+                <a href="#" class="pricing__btn">Zamów</a>
               </div>
             </div>
           </div>
           <div class="col-lg-4 col-sm-6 col-xs-12">
             <div class="pricing_card">
               <div class="pricing__card-single">
-                <div class="price-head">
+                <div class="pricing__card-title">
                   <h2>Ultimate PRO</h2>
                   <h1 class="price">999 zł</h1>
                 </div>
@@ -332,7 +325,7 @@
                   <li><b>120 minut</b> konsultacji</li>
                   <li><b>10%</b> rabatu na szkolenia</li>
                 </ul>
-                <a href="#" class="price_btn">Zamów</a>
+                <a href="#" class="pricing__btn">Zamów</a>
               </div>
             </div>
           </div>
@@ -417,17 +410,24 @@
           <p><i class="fa-solid fa-phone"></i>+48 699-688-677</p>
           <div class="col-lg-4 order-0 order-lg-1 social-media">
             <h6>Social Media</h6>
-            <a href="#"><i class="fa fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank"
+              ><i class="fa fa-linkedin"></i
+            ></a>
+            <a href="https://twitter.com/?lang=pl" target="_blank"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a href="https://www.instagram.com/" target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
           </div>
         </div>
       </div>
     </section>
 
-    <footer>
+    <footer class="bg-light mt-5">
+      <hr />
       <div class="container">
-        <div class="d-flex justify-content-center align-items-center m-2 pt-3">
+        <div class="d-flex justify-content-center align-items-center m-2 p-3">
           <a href="#"><img src="./assets/logo.png" alt="logo firmy" /></a>
           <p class="copy">Copyright © 2023 Olga Orłowska</p>
         </div>

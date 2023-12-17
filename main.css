@@ -190,6 +190,8 @@ header {
   text-align: right;
 }
 
+/* ZALETY PRODUKTU */
+
 .product__boxes i {
   font-size: 45px;
   text-align: center;
@@ -209,7 +211,7 @@ header {
   padding: 20px 25px 40px 25px;
   border: 1px solid transparent;
   border-radius: 5px;
-  box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .product__boxes-text {
@@ -224,7 +226,7 @@ header {
   color: #cdb58a;
 }
 
-/* ZALETY PRODUKTU */
+/* PRODUKT W LICZBACH */
 
 .product__details {
   position: relative;
@@ -257,17 +259,22 @@ header {
   letter-spacing: 0.2px;
 }
 
-.product__details i {
-  font-size: 32px;
+.product__details p.number {
+  font-size: 50px;
   transition: 0.7s;
+  font-weight: 700;
 }
 
-.product__details i:hover {
-  color: #0d0221;
-  scale: 1.6;
+.product__details p.number:hover {
+  color: #6b639b;
+  scale: 1.5;
 }
 
 /* CENNIK */
+
+.pricing {
+  padding: 30px 0 100px;
+}
 
 .pricing-title {
   margin-bottom: 60px;
@@ -316,13 +323,13 @@ header {
   z-index: -1;
 }
 
-.price-head h2 {
+.pricing__card-title h2 {
   margin-bottom: 20px;
   font-size: 26px;
   font-weight: 600;
 }
 
-.price-head h1 {
+.pricing__card-title h1 {
   font-weight: 600;
   margin-top: 20px;
 }
@@ -337,7 +344,7 @@ header {
   line-height: 36px;
 }
 
-.price_btn {
+.pricing__btn {
   background: #554c86;
   padding: 10px 30px;
   color: #fff;
@@ -347,7 +354,7 @@ header {
   transition: 0.5s;
 }
 
-.price_btn:hover {
+.pricing__btn:hover {
   background: #0d0221;
   scale: 1.05;
   box-shadow: 0 10px 40px -10px rgba(45, 0, 128, 0.404);
@@ -362,7 +369,7 @@ a {
 /* FORMULARZ KONTAKTOWY */
 
 .contact__container {
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .contact {
@@ -419,7 +426,7 @@ a {
   height: 250px;
   border-radius: 100%;
   box-shadow: 0 10px 20px -10px rgba(45, 0, 128, 0.404);
-  margin-bottom: 20px;
+  margin: 15px 0;
 }
 
 .contact__contact-person .social-media {
@@ -450,6 +457,7 @@ footer img {
   width: 30px;
   height: 30px;
 }
+
 .copy {
   margin: 0 2rem;
 }
