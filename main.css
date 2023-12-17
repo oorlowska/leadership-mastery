@@ -463,3 +463,17 @@ footer img {
 }
 
 /* --MEDIA QUERIES-- */
+
+@media (max-width: 950px) {
+  .banner__text {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  .banner__text {
+    font-size: 14px;
+    margin-top: 20px;
+  }
+}
